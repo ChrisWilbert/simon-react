@@ -8,16 +8,16 @@ export function About(props) {
 
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-    setImageUrl(`placeholder.jpg`);
-    setQuote('Show me the code');
-    setQuoteAuthor('Linus Torvalds');
+    setImageUrl(`placeholder.jpeg`);
+    setQuote('Don"t just live your life...live Beverley!');
+    setQuoteAuthor('Nate Beverley');
   }, []);
 
   return (
     <main className='container-fluid bg-secondary text-center'>
       <div>
         <div id='picture' className='picture-box'>
-          <img src={placeholder.jpeg}/>
+          <img src={imageUrl} alt='random image' />
         </div>
 
         <p>SOCAL TREAESURES is a guide to many tourist spots located in Southern California.
