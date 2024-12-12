@@ -4,7 +4,7 @@ import { Login } from './login/login';
 import { Play } from './play/play';
 import { About } from './about/about';
 import { AuthState } from './login/authState';
-import {Calendar} from './calendar/calendar'; 
+import Calendar from './calendar/calendar'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
