@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calendar.css';
+import './calendar.css';
 
 const Calendar = () => {
   const [events, setEvents] = useState({});
