@@ -2,10 +2,9 @@ import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
 import { Play } from './play/play';
-import { Scores } from './scores/scores';
 import { About } from './about/about';
 import { AuthState } from './login/authState';
-import AddDateIdeas from './components/AddDateIdeas';
+import Calendar from './components/Calendar';  // Import the new Calendar component
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
@@ -47,6 +46,11 @@ function App() {
                   About
                 </NavLink>
               </li>
+              <li className='nav-item'>
+                <NavLink className='nav-link' to='calendar'>
+                  Calendar
+                </NavLink>
+              </li>
             </menu>
           </nav>
         </header>
@@ -67,9 +71,8 @@ function App() {
             exact
           />
           <Route path='/date night' element={<Play userName={userName} />} />
-          <Route path='/functions' element={<Scores />} />
           <Route path='/about' element={<About />} />
-          <Route path="/add-date-ideas" element={<AddDateIdeas />} />
+          <Route path='/calendar' element={<Calendar />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
