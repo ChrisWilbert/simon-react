@@ -8,7 +8,7 @@ export function About(props) {
 
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-    setImageUrl('placeholder.jpeg');
+    setImageUrl(`placeholder.jpg`);
     setQuote('Don"t just live your life...live Beverley!');
     setQuoteAuthor('Nate Beverley');
   }, []);
