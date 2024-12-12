@@ -1,17 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const DateIdeasForm = () => {
-  const [dateIdea, setDateIdea] = useState('');
-  const [ideas, setIdeas] = useState([]);
+import { Players } from './players';
+import { SimonGame } from './simonGame';
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (dateIdea.trim()) {
-      setIdeas([...ideas, dateIdea]);
-      setDateIdea('');
-    }
-  };
-
+export function Play(props) {
   return (
     <div className="container mt-5">
       <h2>Share Your Fun Date Ideas</h2>
@@ -47,27 +39,3 @@ const DateIdeasForm = () => {
 };
 
 export default DateIdeasForm;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
