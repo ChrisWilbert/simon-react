@@ -48,7 +48,7 @@ export function Players(props) {
 
   return (
     <div className='players'>
-      Player
+      User
       <span className='player-name'>{userName}</span>
       <div id='player-messages'>{createMessageArray()}</div>
     </div>
