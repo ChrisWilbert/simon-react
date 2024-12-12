@@ -20,12 +20,16 @@ export function About(props) {
           <img src={imageUrl} alt='random image' />
         </div>
 
-        <p>Simon is a repetitive memory game where you follow the demonstrated color sequence until you make a mistake. The longer the sequence you repeat, the greater your score.</p>
+        <p>SSOCAL TREAESURES is a guide to many tourist spots located in Southern California.
+            Alongside many amazing tourist spots, locals can add their favorite spots for visitors 
+            to expereience for themselves. 
+          
+            Feel free to check out yourself and enjoy yourself in paradise!</p>
 
         <p>
-          The name Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit educational use only. No part of this code or application may be used outside
-          of that definition.
+        If at any point you are underwhelemed by your experience...there are no refunds. 
         </p>
+      
 
         <div className='quote-box bg-light text-dark'>
           <p className='quote'>{quote}</p>
