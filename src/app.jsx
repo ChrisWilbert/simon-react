@@ -19,7 +19,7 @@ function App() {
         <header className='container-fluid'>
           <nav className='navbar fixed-top navbar-dark'>
             <div className='navbar-brand'>
-              Simon<sup>&reg;</sup>
+              SOCAL TREASURES<sup>&reg;</sup>
             </div>
             <menu className='navbar-nav'>
               <li className='nav-item'>
@@ -29,15 +29,15 @@ function App() {
               </li>
               {authState === AuthState.Authenticated && (
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='play'>
-                    Play
+                  <NavLink className='nav-link' to='date night'>
+                    Date Night
                   </NavLink>
                 </li>
               )}
               {authState === AuthState.Authenticated && (
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='scores'>
-                    Scores
+                  <NavLink className='nav-link' to='functions'>
+                    Functions
                   </NavLink>
                 </li>
               )}
@@ -65,16 +65,16 @@ function App() {
             }
             exact
           />
-          <Route path='/play' element={<Play userName={userName} />} />
-          <Route path='/scores' element={<Scores />} />
+          <Route path='/date night' element={<Play userName={userName} />} />
+          <Route path='/functions' element={<Scores />} />
           <Route path='/about' element={<About />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
         <footer className='bg-dark text-dark text-muted'>
           <div className='container-fluid'>
-            <span className='text-reset'>Author Name(s)</span>
-            <a className='text-reset' href='https://github.com/webprogramming260/simon-react'>
+            <span className='text-reset'>Chris Wilbert</span>
+            <a className='text-reset' href='https://github.com/chriswilbert/startup'>
               Source
             </a>
           </div>
