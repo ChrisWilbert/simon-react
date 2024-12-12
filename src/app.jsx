@@ -5,6 +5,7 @@ import { Play } from './play/play';
 import { Scores } from './scores/scores';
 import { About } from './about/about';
 import { AuthState } from './login/authState';
+import AddDateIdeas from './components/AddDateIdeas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
@@ -68,6 +69,7 @@ function App() {
           <Route path='/date night' element={<Play userName={userName} />} />
           <Route path='/functions' element={<Scores />} />
           <Route path='/about' element={<About />} />
+          <Route path="/add-date-ideas" element={<AddDateIdeas />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
