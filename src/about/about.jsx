@@ -17,10 +17,10 @@ export function About(props) {
     <main className='container-fluid bg-secondary text-center'>
       <div>
         <div id='picture' className='picture-box'>
-          <img src={imageUrl} alt='random image' />
+          <img src={placeholder.jpeg}/>
         </div>
 
-        <p>SSOCAL TREAESURES is a guide to many tourist spots located in Southern California.
+        <p>SOCAL TREAESURES is a guide to many tourist spots located in Southern California.
             Alongside many amazing tourist spots, locals can add their favorite spots for visitors 
             to expereience for themselves. 
           

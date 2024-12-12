@@ -3,7 +3,7 @@ import React from 'react';
 import { Players } from './players';
 import { SimonGame } from './simonGame';
 
-export function Play(props) {
+export function Continue(props) {
   return (
     <main className='bg-secondary'>
       <Players userName={props.userName} />
